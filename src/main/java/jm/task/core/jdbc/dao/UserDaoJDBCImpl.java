@@ -1,9 +1,7 @@
 package jm.task.core.jdbc.dao;
 
 import jm.task.core.jdbc.model.User;
-import jm.task.core.jdbc.util.Util;
 
-import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -76,6 +74,5 @@ public class UserDaoJDBCImpl implements UserDao {
             statement.execute( "DELETE FROM users");
         } catch (SQLException ignore) {
         }
-
     }
 }
