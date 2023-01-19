@@ -32,7 +32,6 @@ public class Util {
         properties.setProperty(AvailableSettings.USER, userName);
         properties.setProperty(AvailableSettings.PASS, password);
         properties.setProperty(AvailableSettings.DIALECT, "org.hibernate.dialect.MySQLDialect");
-//        properties.setProperty(AvailableSettings.HBM2DDL_AUTO, "update");
         properties.setProperty(AvailableSettings.SHOW_SQL, "true");
         configuration.addProperties(properties);
         configuration.addAnnotatedClass(User.class);
